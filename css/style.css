@@ -1,5 +1,103 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    width: 940px;
+    margin: 36px auto 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 16px;
+    margin: 0px 30px;
+}
+
+.menu #foodfy {
+    font-size: 23px;
+    margin-right: 92.4px;
+    font-family: none;
+}
+
 .wrapper {
     background-color: #fbdfdb;
+    width: 940px;
+    height: 366px;
+    margin: 0 auto;
+    border-radius: 30px;
+
+}
+.wrapper_texto {
+    float: left;
+    width: 316px;
+    padding: 117px 0px 0px 60px;
+
+}
+.wrapper_image {
+    float: right;
+    width: 216px;
+    height: 300px;
+    padding: 66px 100px 0px 0px;
+}
+.wrapper h1 {
+    font-size: 32px;
+    padding: 0px 0px 10px 0px;
+}
+
+.wrapper p {
+    font-size: 18px;
+   /* padding: 10px 248px 117px 60px;*/
+
+}
+
+section {
+    width: 940px;
+    margin: 50px auto;
+
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;   
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card__image img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    
+}
+
+.card__content {
+   margin-top: 20px;
+}
+
+.card__info {
+    margin: 5px 0px 10px;
+}
+
+footer {
+    background-color: #EEEEEE;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+    height: 62px;
+}
+
+footer p {
+    padding-top: 23px;
 }
 
 /*=== MODAL ===*/
