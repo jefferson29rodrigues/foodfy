@@ -135,14 +135,7 @@ footer p {
     border-radius: 15px;
 }
 
-.modal .close-modal {
-    color: #999999;
-    position: absolute;
-    right: 300px;
-    bottom: 30px;
-    cursor: pointer;
-    padding: auto;
-}
+
 
 
 /*=== MODAL.ACTIVE ===*/
@@ -151,6 +144,7 @@ footer p {
     opacity: 1;
     visibility: visible;
 }
+/*
 iframe {
     width: 600px;
     height: 200px;
@@ -160,4 +154,34 @@ iframe {
     right: 30px;
     border-radius: 15px;
     background-color: rgb(59, 38, 136);
+}
+*/
+.modal-img img {
+    margin: 30px 30px 0px 30px;
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: aqua;
+}
+
+.modal-info h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.modal-info p {
+    text-align: center;
+    margin-top: 5px;
+    color: #777777;
+    font-size: 18px;
+}
+
+.close-modal {
+    color: #999999;
+    cursor: pointer;
+    position: absolute;
+    left: 281px;
+    bottom: 30px;
+    font-size: 16px;
 }

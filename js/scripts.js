@@ -11,7 +11,7 @@ for (let card of cards) {
         
         const tituloReceitas = card.querySelector('#h3-do-card_content').innerText;
         const autorReceitas = card.querySelector('#p-do-card_info').innerText;
-        
+
         modalOverlay.querySelector('img').src = `assets/${imageId}`;
 
         /* modalOverlay.querySelector(".modal-img").innerHTML = `${imageId}`;*/
@@ -27,7 +27,6 @@ document.querySelector('.close-modal').addEventListener('click', function() {
     modalOverlay.classList.remove('active');
     modalOverlay.querySelector('img').src = "";
 
-   /*
     modalOverlay.querySelector("h3").innerText = ""
-    modalOverlay.querySelector("p").innerText = "" */
+    modalOverlay.querySelector("p").innerText = "" 
 });
