@@ -19,11 +19,14 @@
     </header>
     
     <section>
+
         <div class="cards">
 
-            <div class="card" id="burger.png">
+            {% for item in items %}
+
+            <div class="card" id="{{ item.id }}">
                 <div class="card__image">
-                    <img src="assets/burger.png" alt="Triplo-bacon-burger">
+                    <img src="{{ item.image }}" alt="{{ item.information }}">
                 </div>
                 <div class="card__content">
                     <h3 id="h3-do-card_content">Tripo bacon burger</h3>
@@ -33,137 +36,7 @@
                 </div>
             </div>
 
-            <div class="card" id="pizza.png">
-                <div class="card__image">
-                    <img src="assets/pizza.png" alt="Pizza-4-estações">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Pizza 4 estações</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Fabiana Melo</p>
-                </div>
-            </div>
-
-            <div class="card" id="espaguete.png">
-                <div class="card__image">
-                    <img src="assets/espaguete.png" alt="Espaguete-ao-alho">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Espaguete ao alho</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Júlia Kinoto</p>
-                </div>
-            </div>
-
-            <div class="card" id="lasanha.png">
-                <div class="card__image">
-                    <img src="assets/lasanha.png" alt="Lasanha-mac-n'-cheese">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Lasanha mac n' cheese</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Juliano Vieira</p>
-                </div>
-            </div>
-
-            <div class="card" id="doce.png">
-                <div class="card__image">
-                    <img src="assets/doce.png" alt="Docinhos-pão-do-céu">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Docinhos pão do céu</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Ricardo Golvea</p>
-                </div>
-            </div>
-
-            <div class="card" id="asinhas.png">
-                <div class="card__image">
-                    <img src="assets/asinhas.png" alt="Asinhas-de-frango-ao-barbecue">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Asinhas de frango ao barbecue</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Vania Steroski</p>
-                </div>
-            </div>
-
-            <div class="card" id="burger.png">
-                <div class="card__image">
-                    <img src="assets/burger.png" alt="Triplo-bacon-burger">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Tripo bacon burger</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Jorge Relato</p>
-                </div>
-            </div>
-
-            <div class="card" id="pizza.png">
-                <div class="card__image">
-                    <img src="assets/pizza.png" alt="Pizza-4-estações">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Pizza 4 estações</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Fabiana Melo</p>
-                </div>
-            </div>
-
-            <div class="card" id="espaguete.png">
-                <div class="card__image">
-                    <img src="assets/espaguete.png" alt="Espaguete-ao-alho">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Espaguete ao alho</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Júlia Kinoto</p>
-                </div>
-            </div>
-
-            <div class="card" id="lasanha.png">
-                <div class="card__image">
-                    <img src="assets/lasanha.png" alt="Lasanha-mac-n'-cheese">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Lasanha mac n' cheese</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Juliano Vieira</p>
-                </div>
-            </div>
-
-            <div class="card" id="doce.png">
-                <div class="card__image">
-                    <img src="assets/doce.png" alt="Docinhos-pão-do-céu">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Docinhos pão do céu</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Ricardo Golvea</p>
-                </div>
-            </div>
-
-            <div class="card" id="asinhas.png">
-                <div class="card__image">
-                    <img src="assets/asinhas.png" alt="Asinhas-de-frango-ao-barbecue">
-                </div>
-                <div class="card__content">
-                    <h3 id="h3-do-card_content">Asinhas de frango ao barbecue</h3>
-                </div>
-                <div class="card__info">
-                    <p id="p-do-card_info">por Vania Steroski</p>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
     </section>
