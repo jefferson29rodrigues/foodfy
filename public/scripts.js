@@ -11,8 +11,9 @@ for (let card of cards) {
         
         const tituloReceitas = card.querySelector('#h3-do-card_content').innerText;
         const autorReceitas = card.querySelector('#p-do-card_info').innerText;
+        const imagemReceita = card.querySelector('img').getAttribute('src');
 
-        modalOverlay.querySelector('img').src = `assets/${imageId}`;
+        modalOverlay.querySelector('img').src = `${imagemReceita}`;
 
         /* modalOverlay.querySelector(".modal-img").innerHTML = `${imageId}`;*/
 
