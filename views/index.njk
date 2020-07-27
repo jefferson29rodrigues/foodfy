@@ -16,77 +16,21 @@
         <h2>Mais acessadas</h2>
         <div class="cards">
 
-            <div class="card">
+            {% for item in items %}
+
+            <div class="card" >
                 <div class="card__image">
-                    <img src="assets/burger.png" alt="Triplo-bacon-burger">
+                    <img src="{{ item.image }}" alt="{{ item.information }}">
                 </div>
                 <div class="card__content">
-                    <h3>Tripo bacon burger</h3>
+                    <h3>{{ item.title }}</h3>
                 </div>
                 <div class="card__info">
-                    <p>por Jorge Relato</p>
+                    <p>{{ item.author }}</p>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/pizza.png" alt="Pizza-4-estações">
-                </div>
-                <div class="card__content">
-                    <h3>Pizza 4 estações</h3>
-                </div>
-                <div class="card__info">
-                    <p>por Fabiana Melo</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/espaguete.png" alt="Espaguete-ao-alho">
-                </div>
-                <div class="card__content">
-                    <h3>Espaguete ao alho</h3>
-                </div>
-                <div class="card__info">
-                    <p>por Júlia Kinoto</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/lasanha.png" alt="Lasanha-mac-n'-cheese">
-                </div>
-                <div class="card__content">
-                    <h3>Lasanha mac n' cheese</h3>
-                </div>
-                <div class="card__info">
-                    <p>por Juliano Vieira</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/doce.png" alt="Docinhos-pão-do-céu">
-                </div>
-                <div class="card__content">
-                    <h3>Docinhos pão do céu</h3>
-                </div>
-                <div class="card__info">
-                    <p>por Ricardo Golvea</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/asinhas.png" alt="Asinhas-de-frango-ao-barbecue">
-                </div>
-                <div class="card__content">
-                    <h3>Asinhas de frango ao barbecue</h3>
-                </div>
-                <div class="card__info">
-                    <p>por Vania Steroski</p>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
     </section>

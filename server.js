@@ -13,7 +13,7 @@ nunjucks.configure("views", {
 });
 
 server.get('/', function(req, res) {
-    return res.render("index");
+    return res.render("index", { items: receitas });
 });
 
 server.get('/receitas', function(req, res) {
