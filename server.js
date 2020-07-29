@@ -23,10 +23,10 @@ server.get('/receitas', function(req, res) {
 server.get('/description/:id', function(req, res) {
     const id = req.params.id;
 
-    if (id == 1) {
+    if (id == 10) {
         return res.render('description');
     } else {
-        return res.send('Id qualquer! Você não chegou a página description...');
+        return res.send(`Você clicou no card com Id = ${id}! Você não chegou a página description...`);
     }
 
 });

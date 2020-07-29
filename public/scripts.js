@@ -40,7 +40,7 @@ document.querySelector('.close-modal').addEventListener('click', function() {
 const cards = document.querySelectorAll('.card');
 
 for (let card of cards) {
-     card.addEventListener("clique", function() {
+     card.addEventListener("click", function() {
         const idCard = card.getAttribute('id');
 
         window.location.href = `description/${idCard}`;
