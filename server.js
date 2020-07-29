@@ -22,11 +22,12 @@ server.get('/receitas', function(req, res) {
 
 server.get('/description/:id', function(req, res) {
     const id = req.params.id;
+    const idr = receitas[id].id;
 
-    if (id == 10) {
-        return res.render('description');
+    if (id == idr) {
+        return res.render('description', { item: receitas[id] });
     } else {
-        return res.send(`Você clicou no card com Id = ${id}! Você não chegou a página description...`);
+        return res.send(`Você clicou no card com Id = ${id} idr = ${idr}! Você não chegou a página description...`);
     }
 
 });
