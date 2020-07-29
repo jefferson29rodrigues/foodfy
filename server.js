@@ -20,6 +20,17 @@ server.get('/receitas', function(req, res) {
     return res.render('receitas', { items: receitas });
 });
 
+server.get('/description/:id', function(req, res) {
+    const id = req.params.id;
+
+    if (id == 1) {
+        return res.render('description');
+    } else {
+        return res.send('Id qualquer! Você não chegou a página description...');
+    }
+
+});
+
 server.get('/sobre', function(req, res) {
     return res.render('sobre');
 });

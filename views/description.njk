@@ -1,0 +1,28 @@
+
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+PARABÊNS!!! Você está na página description!
+
+<section>
+
+        <div class="cards">
+
+            <div class="card" id="{{ item.id }}">
+                <div class="card__image">
+                    <img id="imagem_receita" src="{{ item.image }}" alt="{{ item.information }}">
+                </div>
+                <div class="card__content">
+                    <h3 id="h3-do-card_content">{{ item.title }}</h3>
+                </div>
+                <div class="card__info">
+                    <p id="p-do-card_info">por {{ item.author }}</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+{% endblock %}
