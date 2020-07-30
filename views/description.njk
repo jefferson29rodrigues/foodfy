@@ -23,16 +23,21 @@
 
                     <h2>Ingredientes</h2>
                     <ul>
-                        <li>{{ item.ingredients[0] }}</li>
-                        <li>{{ item.ingredients[1] }}</li>
-                        <li>{{ item.ingredients[2] }}</li>
-                        <li>{{ item.ingredients[3] }}</li>
-                        <li>{{ item.ingredients[4] }}</li>
-                        <li>{{ item.ingredients[5] }}</li>
+
+                        {% for n in item.ingredients %}
+
+                        <li>{{ n }}</li>
+                    
+                        {% endfor %}
+
                     </ul>
 
                 </div>
-                <div class="modoPreparo"></div>
+                <div class="modoPreparo">
+
+                    <h2>Modo de Preparo</h2>
+
+                </div>
                 <div class="infoAdd"></div>
 
             </div>
