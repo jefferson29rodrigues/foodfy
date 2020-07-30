@@ -36,9 +36,25 @@
                 <div class="modoPreparo">
 
                     <h2>Modo de Preparo</h2>
+                    <ul>
+
+                        {% for n in item.preparation %}
+
+                        <li>{{ n }}</li>
+                    
+                        {% endfor %}
+
+                    </ul>
 
                 </div>
-                <div class="infoAdd"></div>
+                <div class="infoAdd">
+
+                    <h2>Informações Adicionais</h2>
+                    <ul>
+                        <li>{{ item.information }}</li>
+                    </ul>
+
+                </div>
 
             </div>
 
