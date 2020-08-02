@@ -186,3 +186,15 @@ iframe {
     bottom: 30px;
     font-size: 16px;
 }
+
+/*=== Description.njk ===*/
+
+
+.card__image_t {
+    width: 940px;
+    height: 280px;
+}
+
+#imagem_receita_t {
+    border-radius: 15px;
+}
