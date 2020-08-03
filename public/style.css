@@ -198,3 +198,16 @@ iframe {
 #imagem_receita_t {
     border-radius: 15px;
 }
+
+.card__content_t {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    color: #111111;
+}
+
+.card__info_t {
+    color: #777777;
+    font-size: 20px;
+    text-align: center;
+}
